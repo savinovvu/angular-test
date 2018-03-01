@@ -1,0 +1,15 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test-folder",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "stest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^3.1.0",
+    "jasmine-core": "^3.1.0"
+  }
+}
