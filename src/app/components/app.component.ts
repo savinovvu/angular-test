@@ -7,9 +7,11 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   comments: Array<string>;
+  newComment: string;
+
 
   constructor() {
-    this.comments = ['a sample comment', 'Second comment', 'Third comment'];
+    this.comments = [];
   }
 
   add(comment: string) {

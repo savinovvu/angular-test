@@ -1,5 +1,5 @@
-<input type="text">
-<button type="button">Submit</button>
+<input type="text" [(ngModel)]="newComment">
+<button type="button" (click)="add(newComment)">Submit</button>
 <ul>
   <li *ngFor="let comment of comments">{{comment}}</li>
 </ul>

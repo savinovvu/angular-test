@@ -6,15 +6,15 @@ describe('AppComponent Tests', () => {
   let fixture: ComponentFixture<AppComponent>;
 
   beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [AppComponent],
+    }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);
     comp = fixture.componentInstance;
-    comp.add('a sample comment');
+    comp.add('a sample comment2');
   });
 
   it('First item inthe item should match', () => {
-    fixture = TestBed.createComponent(AppComponent);
-    comp = fixture.componentInstance;
-    comp.add('a sample comment');
-    expect(comp.comments[0]).toBe('a sample comment');
+    expect(comp.comments[0]).toBe('a sample comment2');
   });
 });
