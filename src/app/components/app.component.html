@@ -1,5 +1,12 @@
-<input type="text" [(ngModel)]="newComment">
-<button type="button" (click)="add(newComment)">Submit</button>
+<form (ngSubmit)="add()" novalidate>
+  <input type="text" name="title" [(ngModel)]="newCommentary.title">
+  <button type="submit">Submit</button>
+</form>
 <ul>
-  <li *ngFor="let comment of comments">{{comment}}</li>
+  <li *ngFor="let comment of comments">{{comment.title}}
+    <button type="button" (click)="like(comment)">like</button>
+    <span id="likes">{{comment.likes}}</span>
+  </li>
 </ul>
+
+<!--#form="ngForm"-->
