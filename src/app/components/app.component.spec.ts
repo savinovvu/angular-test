@@ -1,34 +1,20 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {AppComponent} from './app.component';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-describe('Title of the test suite', () => {
-  let app: AppComponent;
+describe('AppComponent Tests', () => {
   let comp: AppComponent;
   let fixture: ComponentFixture<AppComponent>;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [AppComponent]
-    }).compileComponents();
-  });
-
-  beforeEach(() => {
     fixture = TestBed.createComponent(AppComponent);
     comp = fixture.componentInstance;
+    comp.add('a sample comment');
   });
 
-  beforeEach(() => {
-    comp.add('new-item');
+  it('First item inthe item should match', () => {
+    fixture = TestBed.createComponent(AppComponent);
+    comp = fixture.componentInstance;
+    comp.add('a sample comment');
+    expect(comp.comments[0]).toBe('a sample comment');
   });
-
-  it('Should define a list object', () => {
-    expect(comp.items).toBeDefined();
-  });
-  it('Should have 4 items in list', () => {
-    expect(comp.items.length).toBe(4);
-  });
-  it('List items should be as expected', () => {
-    expect(comp.items).toEqual(['test', 'execute', 'refactor','new-item']);
-  });
-
 });

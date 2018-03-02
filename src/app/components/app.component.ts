@@ -1,20 +1,18 @@
-import { Component } from '@angular/core';
-import {browser} from 'protractor';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: `./app.component.html`,
-  styleUrls:['./app.component.css']
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent  {
-  name = 'Angular';
-  items: Array<string>;
+export class AppComponent {
+  comments: Array<string>;
 
-  constructor(){
-    this.items = ['test','execute','refactor'];
+  constructor() {
+    this.comments = ['a sample comment', 'Second comment', 'Third comment'];
   }
 
-  add(s: string) {
-    this.items.push(s);
+  add(comment: string) {
+    this.comments.unshift(comment);
   }
 }
