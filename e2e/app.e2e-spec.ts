@@ -21,10 +21,10 @@ describe('AppComponent Tests', () => {
   it('Should get the number of items as defined in item object', () => {
     var listItem = element.all(by.css('li'));
     listItem.count().then(() => {
-      expect(listItem.count).toBe(3);
+      expect(listItem.count()).toBe(3);
     }
   );
-    expect(todoListItems.count()).toBe(3);
+    // expect(todoListItems.count()).toBe(3);
   });
   it('Should get the first item text as defined', () => {
     expect(todoListItems.first().getText()).toEqual('test');
