@@ -1,3 +1,4 @@
+/*
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { View2Component } from './view2.component';
@@ -23,3 +24,4 @@ describe('View2Component', () => {
     expect(component).toBeTruthy();
   });
 });
+*/

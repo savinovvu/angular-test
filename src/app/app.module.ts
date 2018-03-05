@@ -11,6 +11,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MembersComponent } from './components/members/members.component';
 import { PersonComponent } from './components/person/person.component';
 import {HttpClientModule} from '@angular/common/http';
+import { RouterLinkStubDirective } from './stub/router-link-stub.directive';
+import { RouterOutletStubComponent } from './stub/router-outlet/router-outlet.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import {HttpClientModule} from '@angular/common/http';
     View2Component,
     NavbarComponent,
     MembersComponent,
-    PersonComponent
+    PersonComponent,
+    RouterLinkStubDirective,
+    RouterOutletStubComponent
   ],
   imports: [
     BrowserModule, FormsModule, routing, HttpClientModule
