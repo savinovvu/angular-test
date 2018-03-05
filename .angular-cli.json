@@ -9,6 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
+        "app",
         "favicon.ico"
       ],
       "index": "index.html",
@@ -57,4 +58,6 @@
     "styleExt": "css",
     "component": {}
   }
+
+
 }

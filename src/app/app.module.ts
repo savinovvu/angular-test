@@ -8,6 +8,8 @@ import {routing} from './app.routes';
 import { View1Component } from './components/view1/view1.component';
 import { View2Component } from './components/view2/view2.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MembersComponent } from './components/members/members.component';
+import { PersonComponent } from './components/person/person.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AppComponent,
     View1Component,
     View2Component,
-    NavbarComponent
+    NavbarComponent,
+    MembersComponent,
+    PersonComponent
   ],
   imports: [
     BrowserModule, FormsModule, routing

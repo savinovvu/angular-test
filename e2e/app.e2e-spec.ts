@@ -1,6 +1,6 @@
 import {browser, by, element} from 'protractor';
 
-describe('Given I am posting a new comment', () => {
+/*describe('Given I am posting a new comment', () => {
   describe('When I push the submit button', () => {
     beforeEach(() => {
       browser.get('');
@@ -15,4 +15,4 @@ describe('Given I am posting a new comment', () => {
     });
 
   });
-});
+});*/
