@@ -10,6 +10,7 @@ import { View2Component } from './components/view2/view2.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MembersComponent } from './components/members/members.component';
 import { PersonComponent } from './components/person/person.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { PersonComponent } from './components/person/person.component';
     PersonComponent
   ],
   imports: [
-    BrowserModule, FormsModule, routing
+    BrowserModule, FormsModule, routing, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

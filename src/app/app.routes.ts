@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: 'view1', component: View1Component},
   {path: 'view2', component: View2Component},
   {path: 'members', component: MembersComponent},
-  {path: '/person/:id', component:PersonComponent}
+  {path: 'person/:id', component:PersonComponent}
 ];
 
 export const routing = RouterModule.forRoot(routes);

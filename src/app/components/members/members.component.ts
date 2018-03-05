@@ -18,7 +18,7 @@ export class MembersComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.search;
+    this.search();
   }
 
   getData() {
@@ -44,7 +44,9 @@ export class MembersComponent implements OnInit {
 
   search(): void {
     this.searchQuery(this.query)
-      .then(results => this.memberList = results);
+      .then(results => {
+        this.memberList = results;
+      });
   }
 
   viewDetails(id: number) {
