@@ -48,6 +48,6 @@ export class MembersComponent implements OnInit {
   }
 
   viewDetails(id: number) {
-    this.router.navigate(['/person'], `${id}`);
+    this.router.navigate(['/person', id]);
   }
 }

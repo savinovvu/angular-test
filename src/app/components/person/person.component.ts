@@ -17,8 +17,8 @@ export class PersonComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((params: Params) => {
       let id = +params['id'];
-      this.getPerson(id).then(person => {
-        this.person = person;
+      this.getPerson(id).then((pers:Person) => {
+        this.person = pers;
       });
     });
   }
@@ -30,7 +30,7 @@ export class PersonComponent implements OnInit {
   }
 
   private getPerson(id: number) {
-    return this.getData().then(data => data.find(member => member.id === id));
+    return this.getData().then((data: any) => data.find(member => member.id === id));
 
   }
 }
